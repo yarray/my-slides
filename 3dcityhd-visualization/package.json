@@ -1,0 +1,22 @@
+{
+  "name": "3dcityhd-visualization",
+  "version": "0.1.0",
+  "description": "presentation for lecture on visualizing 3d city models",
+  "homepage": "kunlun.geog.uni-heidelberg.de/3dcityhd2015/visualize",
+  "main": "js/app.js",
+  "author": {
+    "name": "Anran Yang",
+    "email": "anran.yang.china@gmail.com",
+    "web": "http://yarray.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yarray/my-slides.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://yarray/my-slides/blob/master/LICENSE"
+    }
+  ]
+}

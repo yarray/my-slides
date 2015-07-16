@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-size="initial">
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 11; color: rgb(0, 0, 0);" dir="ui">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Visualize 3D City Models on the Web</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">So you have 3D city models...</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 248px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <p style="color:rgb(56, 56, 56); text-align:start">Did I get something wrong?</p>
+                        <p style="color:rgb(56, 56, 56); text-align:start">How to show my work to others (so they will admire me)?</p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 80px; top: 479px;">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p style="text-align: left;">
+                            <span style="color:rgb(56, 56, 56); text-align:start">Visualize!</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Several examples</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">What's the advantage visualization on the web</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 306px; height: auto;">
+                    <div class="sl-block-content">
+                        <ul style="color:rgb(56, 56, 56)">
+                            <li>Easy to access</li>
+                            <li>Easy to update the system</li>
+                            <li>Integration with other web technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 966px; height: 714px; left: 0px; top: 0px;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.google.com/maps/place/Heidelberg,+Germany/@49.4049625,8.6847682,860m/data=!3m1!1e3!4m2!3m1!1s0x4797c1050eccdccd:0xefe6ea0044243ad7!6m1!1e1&output=embed"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">How can we do that</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 248px; height: auto;">
+                    <div class="sl-block-content">
+                        <h2>
+                            <span style="color:rgb(56, 56, 56); text-align:start">Flash . Java Applet . WebGL&nbsp;</span>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">The structure of WebGL application</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 300px; height: 300px; left: 80px; top: 330px;">
+                    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="false" style="z-index: 12;">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 300 300">
+                            <rect width="300" height="300" class="shape-element" fill="rgb(238, 238, 238)"></rect>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 182px; left: 640px; top: 361px;">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <p>Javascript</p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 182px; left: 138px; top: 381px;">
+                    <div class="sl-block-content" style="z-index: 14;">
+                        <p>HTML</p>
+                        <p>container</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 300px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">It's just that simple</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 80px; top: 560px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <p style="text-align: left;">
+                            <span style="color:rgb(56, 56, 56); text-align:start">...Just kidding</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 490px; height: 490px; left: 400px; top: 140px;">
+                    <div class="sl-block-content" style="z-index: 13;">
+                        <img data-natural-width="900" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/343839/images/1495825/OwlProblem.jpg" />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">How can we do that</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 800px; height: 346.5px; left: 80px; top: 280px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <img data-natural-width="1600" data-natural-height="693" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/343839/images/1495837/spaces.png" />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 234px; left: 80px; top: 202px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Three.js as a rescue</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 566px; height: 539.796296296296px; left: 314px; top: 67px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="http://learningthreejs.com/data/lets_do_a_cube/lets_do_a_cube.html"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">How can we do that</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 829px; height: 329px; left: 80px; top: 280px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <pre><code>// create the camera
+camera = new THREE.Camera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
+camera.position.z = 350;
+
+// create the Scene
+scene = new THREE.Scene();
+
+// create the Cube
+cube = new THREE.Mesh( 
+    new THREE.CubeGeometry( 200, 200, 200 ),
+    new THREE.MeshNormalMaterial() 
+);
+
+// add the object to the scene
+scene.addObject( cube );</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Now we can...</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 248px; height: auto;">
+                    <div class="sl-block-content">
+                        <ul style="color:rgb(56, 56, 56)">
+                            <li>Create a cube</li>
+                            <li>Put that cube on Heidelberg ???</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Cesium for the rescue</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">WebGL vs Three.js vs Cesium</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content" style="z-index: 10;">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">The format</h1>
+                    </div>
+                </div>
+                <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 531px; height: 531px; left: 349px; top: 70px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <img data-natural-width="900" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/343839/images/1495869/cB0GwGK.jpg" />
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Visualize the model</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Choose the right location</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Visualize the model on earth</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1 style="color:rgb(56, 56, 56); font-size:1.5em; text-align:start">Finally, the easy way ...</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                    <div class="sl-block-content">
+                        <h1>Thanks for laughing</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'reveal.js/lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'reveal.js/plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'reveal.js/plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'reveal.js/plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'reveal.js/plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'reveal.js/plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
