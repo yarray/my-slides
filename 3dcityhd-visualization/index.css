@@ -1,0 +1,114 @@
+/* .reveal .slides { */
+/*     margin: 0 0; */
+/* } */
+
+.reveal .slides > section {
+    height: 100%;
+    padding: 0 0;
+    top: 0 !important; /* I don't know why there is a 15px top on element */
+}
+
+.reveal section > .title {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 720px;
+    margin: 10% auto;
+}
+
+.reveal section h1 {
+    /* font-family: "calibri", sans-serif; */
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 60pt;
+}
+
+.reveal section p.author {
+    color: white;
+}
+
+.reveal h2 {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    font-size: 28pt;
+    display: inline-block;
+    text-align: left;
+    vertical-align: text-bottom;
+    max-width: 80%;
+}
+
+.reveal h1 {
+    position: relative;
+}
+
+.reveal .joke {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 22pt;
+    color: #FA0680;
+    transform: rotate(20deg);
+}
+
+.reveal .joke:first-of-type {
+    margin-top: 10%;
+}
+
+.reveal h3.right-tilt {
+    margin-top: 18%;
+    transform: rotate(-10deg);
+}
+
+.reveal iframe.three {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.reveal iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reveal .left-half {
+    width: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.reveal .right-half {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+.reveal .white {
+    color: #FFF;
+}
+
+.reveal span.shout {
+    font-size: 172pt;
+    margin-top: 20%;
+}
+
+.reveal .full {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.reveal pre {
+    max-width: 720px;
+}
+
+.reveal pre code {
+    padding: 15px 30px;
+    max-height: 9999px;
+}
+
+.reveal h1, .reveal h2 {
+    color: white;
+}
